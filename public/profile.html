@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styleProfile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <title>WeCare</title>
+
+  <script>
+   if (sessionStorage.getItem('status') != 'loggedIn')
+      {
+          window.location.replace("index.html");
+      }
+  </script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="z-depth-0 grey lighten-4">
+    <div class="nav-wrapper container">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="emergency();">Emergency</a>
+            </li>
+
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="community();">Community</a>
+            </li>
+
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" data-target="modal-about">About us</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger waves-effect waves-red" data-target="modal-contact">Contact us</a>
+            </li>
+            <li class="logged-out">
+                <a href="statistics.html" class="grey-text modal-trigger waves-effect waves-red">Statistics</a>
+           </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="logout();">Logout</a>
+            </li>
+            </span>
+        </ul>
+
+    </div>
+</nav>
+
+<script>
+    function toggleSidebar()
+    {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+</script>
+
+<header>
+    <div id="sidebar">
+        <div class = "toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#" class="modal-trigger" data-target="modal-readings">Readings</a></li>
+            <li><a href="#" class="modal-trigger" data-target="modal-medications">Medications</a></li>
+            <li><a href="#" class="modal-trigger" data-target="modal-allergies">Allergies</a></li>
+            <li><a href="#" class="modal-trigger" data-target="modal-procedures">Procedures</a></li>
+            <li><a href="#" class="modal-trigger" data-target="modal-tests">Tests</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        
+        <h2>PATIENT PROFILE</h2>
+        <form id="profile-form">
+            <div>
+                <input type="text" placeholder="Insert Patient ID" id="profile-username" style="width: 50%;">
+                <input type="submit" value="Search" name="submit" >
+            </div>
+            <div>
+                <table class="highlight">
+                    <tr>
+                        <th><label for="profile-name">Name</label></th>
+                        <th><input type="text"  id="profile-name" style="color: white;" disabled></th>
+
+                        <th><label for="profile-gender">Gender</label></th>
+                        <th><input type="text"  id="profile-gender" style="color: white;" disabled></th>
+                    
+                        <th><label for="profile-age">Age</label></th>
+                        <th><input type="text" id="profile-age" style="color: white;" disabled></th>
+                    </tr>
+
+                    <tr>
+                        <th><label for="profile-weight">Weight</label></th>
+                        <th><input type="text" id="profile-weight" style="color: white;" disabled></th>
+
+                        <th><label for="profile-height">Height</label></th>
+                        <th><input type="text"  id="profile-height" style="color: white;" disabled></th>
+
+                        <th><label for="profile-blood">Blood Type</label></th>
+                        <th><input type="text" id="profile-blood" style="color: white;" disabled></th>
+                    </tr>
+
+                    <tr>
+                        <th><label for="profile-pregnant">Pregnant</label></th>
+                        <th><input type="text" id="profile-pregnant" style="color: white;" disabled></th>
+
+                        <th><label for="profile-smoker">Smoker</label></th>
+                        <th> <input type="text" id="profile-smoker" style="color: white;" disabled></th>
+
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div>
+                <label for="allergies">Allergies</label>
+                <textarea id="allergies" cols="100" rows="5" disabled style="resize: none; color: white; height: 20%"></textarea>
+
+                <hr style="margin-bottom: 20px;margin-top: 5px;">
+
+                <label for="medcs">Medications</label>
+                <textarea id="medcs" cols="5" rows="5" disabled style="resize: none; color: white; height: 20%"></textarea>
+            </div>
+
+            <div>
+                <hr style="margin-bottom: 20px;margin-top: 5px;">
+
+                <label for="procedures">Procedures</label>
+                <textarea id="procedures" cols="5" rows="5" disabled style="resize: none; color: white; height: 20%"></textarea>
+            </div>
+
+            <div>
+                <hr style="margin-bottom: 20px;margin-top: 5px;">
+
+                <label for="tests">Tests</label>
+                <textarea id="tests" cols="5" rows="5" disabled style="resize: none; color: white; height: 20%"></textarea>
+            </div>
+            
+
+            <!-- READINGS MODAL -->
+            <div id="modal-readings" class="modal">
+                <div class="modal-content">
+                <h4 style="color:#FF0206;">Readings</h4><br />
+                <form id="reading-form"> 
+                    <div id="hr_chart"></div>
+                    <hr style="margin-bottom: 15px;">
+                    <div id="steps_chart"></div>
+                    <hr style="margin-bottom: 15px;">
+                    <div id="sleep_chart"></div>
+                </form>
+                </div>
+            </div>
+
+            <!-- MEDICATIONS MODAL -->
+            <div id="modal-medications" class="modal">
+                <div class="modal-content">
+                <h4 style="color:#FF0206;">Medications</h4><br />
+                <form id="medc-form"> 
+                    <input type="text" placeholder="Medication Name eg. panadol" id="profile-medName" style="color: black">
+                    <input type="text" placeholder="Medication Days eg. 7 days" id="profile-medDays" style="color: black">
+                    <input type="text" placeholder="Medication Times eg. 2 times/day" id="profile-medTimes" style="color: black">
+                    <input type="text" placeholder="Medication Time eg. 11 am" id="profile-medTime" style="color: black">
+                    <input type="text" placeholder="Medication Dose eg. 1 pill" id="profile-medDose" style="color: black">
+                    <input type="text" placeholder="Medication Desc eg. take before food" id="profile-medDesc" style="color: black">
+    
+                    <button class="btn yellow darken-2 z-depth-0 " id="btn_insrt" disabled>Insert</button>
+                </form>
+                </div>
+            </div>
+
+            <!-- ALLERGIES MODAL -->
+            <div id="modal-allergies" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#FF0206;">Allergies</h4><br />
+                    <form id="allergies-form">
+                        <input type="text" placeholder="Allergy name" id="profile-allergiesName" style="color: black">
+                        <input type="text" placeholder="Allergy Description" id="profile-allergiesDesc" style="color: black">
+
+                        <button class="btn yellow darken-2 z-depth-0 " id="btn_insrt_allergies" disabled>Insert</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PROCEDURES MODAL -->
+            <div id="modal-procedures" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#FF0206;">Procedures</h4><br />
+                    <form id="procedures-form">
+                        <input type="text" placeholder="Procedure name" id="profile-proName" style="color: black">
+                        <input type="text" placeholder="Procedure Date" id="profile-proDate" style="color: black">
+                        <input type="text" placeholder="Procedure Desc" id="profile-proDesc" style="color: black">
+
+                        <button class="btn yellow darken-2 z-depth-0 " id="btn_insrt_procedures" disabled>Insert</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- tests modal -->
+            <div id="modal-tests" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#FF0206;">Tests</h4><br />
+                    <form id="tests-form">
+                        <input type="text" placeholder="Test name" id="profile-tesName" style="color: black">
+                        <input type="text" placeholder="Test Desc" id="profile-tesDesc" style="color: black">
+
+                        <button class="btn yellow darken-2 z-depth-0 " id="btn_insrt_tests" disabled>Insert</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ABOUT US MODAL -->
+            <div id="modal-about" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#33B8FF;">About us</h4><br />
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Emergency Care</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Realtime Vital Monitoring</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Medications Reminder</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;" >Online Help</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONTACT US MODAL -->
+            <div id="modal-contact" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#33B8FF;">Contact us</h4><br />
+                    <form id="contact-form">
+
+                        <div class="input-field">
+                            <input type="text" id="contact-name" required />
+                            <label for="contact-name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="contact-email" required />
+                            <label for="contact-email">Email address</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="contact-msg" class="materialize-textarea"></textarea>
+                                <label for="contact-msg">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="btn yellow darken-2 z-depth-0">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+        <div class="container">
+        © 2020 WeCare
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDf9za7Hfo4oHXLws70A4CI-nFY2bY9638",
+            authDomain: "wecaresystem-34243.firebaseapp.com",
+            databaseURL: "https://wecaresystem-34243.firebaseio.com",
+            projectId: "wecaresystem-34243",
+            storageBucket: "wecaresystem-34243.appspot.com",
+            messagingSenderId: "465247498229",
+            appId: "1:465247498229:web:e7ed7e3698fa132ad6fabc",
+            measurementId: "G-ZPCM6EFEV0"
+            };
+        firebase.initializeApp(config);
+        firebase.analytics();
+        
+        // make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      </script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/profile.js"></script>
+      <script src="js/contact.js"></script>
+</body>
+</html>

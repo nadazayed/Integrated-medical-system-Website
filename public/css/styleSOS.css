@@ -1,0 +1,74 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body
+{
+	overflow-x: hidden;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bkgnd.jpg');
+	background-size: cover;
+	background-position: center;
+}
+header
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.wrap
+{
+	height: 100%;
+	max-width: 72%;
+	border-radius: 20px;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	padding: 40px;
+	color: #fff;
+}
+
+h2
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.page-footer
+{
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+	color: #fff;
+}
+
+.page-footer-span
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.highlight
+{
+    border-radius: 20px;
+    color: #fff;
+}
+
+.cross
+{   text-align: center;
+    cursor:  pointer;
+    font-weight:  bold;
+}
+
+.cross:hover
+{
+    border-bottom: 2px solid #FF0206;
+}
+
+th
+{
+	font-size: small;
+}

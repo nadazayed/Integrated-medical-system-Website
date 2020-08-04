@@ -1,0 +1,374 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>WeCare</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/statistics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script type="text/JavaScript" src="js/display.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>WeCare</title>
+
+    <script>
+   if (sessionStorage.getItem('status') != 'loggedIn')
+      {
+          window.location.replace("index.html");
+      }
+  </script>
+
+  </head>
+  <body>
+
+
+    <!-- NAVBAR -->
+<nav class="z-depth-0 grey lighten-4">
+    <div class="nav-wrapper container">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="home();">Home</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="emergency();">Emergency</a>
+            </li>
+
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="community();">Community</a>
+            </li>
+
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" data-target="modal-about">About us</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text modal-trigger waves-effect waves-red" data-target="modal-contact">Contact us</a>
+            </li>
+            <li class="logged-out">
+                <a href="#" class="grey-text  modal-trigger waves-effect waves-red" onclick="logout();">Logout</a>
+            </li>
+            </span>
+        </ul>
+
+    </div>
+</nav>
+
+  <!-- NAVBAR END -->
+
+<div id="userPro" class="wrap" >
+  <form id="userProp"  class="col s12">
+
+    <div id="first-choice" class="gender">
+
+      <p>Pick Gender</p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="male" name="male" value="male" />
+        <span>Male</span>
+      </label>
+      </p>
+      <p>
+      <label class="checkbox-inline"style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="female" name="gen[]" value="female" onabort="show()" />
+        <span>Female</span>
+      </label>
+      </p>
+      <p>
+      <label class="checkbox-inline"style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="pregBox" name="perg[]" value="pregBox" />
+        <span>Pergnant</span>
+      </label>
+      </p>
+      <p>
+      <label class="checkbox-inline"style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="NonPregBox" name="preg[]" value="NonPregBox" />
+        <span>None Pregnant</span>
+      </label>
+      </p>
+      
+    </div> 
+
+    <br>
+
+      <div class="row"> 
+
+    <div>
+    <div class="age">
+      <br>
+      <div>
+        <p style="">Enter Age</p>
+        <p>
+        <div class="input-field col s6">
+          <input placeholder="Minimum Age" id="ageMin" type="number" class="validate" style="width: auto;">
+        </div>
+        </div>
+      <div>
+        <div class="input-field col s6">
+          <input placeholder="Maximum Age" id="ageMax" type="number" class="validate" style="width: auto;">
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+
+   <div >
+   <div>
+        <p>Enter Height</p>
+        <div class="input-field col s6">
+          <input placeholder="Minimum Height" id="heightMin" type="number" class="validate" style="width: auto;">
+        </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Maximum Height" id="heightMax" type="number" class="validate" style="width: auto;">
+        </div>
+        </div>
+      
+
+    </div>
+
+    <div >
+   <div>
+        <p>Enter Weight</p>
+        <div class="input-field col s6">
+          <input placeholder="Minimum Weight" class="validate" id="weightMin" type="number"  style="width: auto;">
+        </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Maximum Weight" class="validate" id="weightMax" type="number"  style="width: auto;">
+        </div>
+        </div>
+      
+
+    </div>
+
+  </div>
+
+
+
+    <div class="row">
+
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="A+" />
+        <span>A+</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="A-" />
+        <span>A-</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="B+" />
+        <span>B+</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="B-" />
+        <span>B-</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="O+" />
+        <span>O+</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="O-" />
+        <span>O-</span>
+      </label style="width: auto; float:left; height:auto; margin:10px">
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="AB+" />
+        <span>AB+</span>
+      </label>
+      </p>
+      <p>
+      <label style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" class="blood" value="AB-"  />
+        <span>AB-</span>
+      </label>
+      </p>
+
+    </div>
+
+    <div class="row">
+
+       <p>
+      <label class="checkbox-inline"style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="smoker" name="smok[]" value="smoker" />
+        <span>Smoker</span>
+      </label>
+      </p>
+      <p>
+      <label class="checkbox-inline"style="width: auto; float:left; height:auto; margin:10px">
+        <input type="checkbox" id="notSmoker" name="smok[]" value="notSmoker" />
+        <span>Not Smoker</span>
+      </label>
+      </p>
+      
+    </div>
+
+  
+ 
+
+    <div class="row" >
+   <div>
+        <div class="input-field col s6">
+          <spam style="display: block;">Start Date</spam>
+          <input id="startDate" type="date" class="validate" style="width: auto;">
+        </div>
+        </div>
+      <div>
+        <div class="input-field col s6">
+          <spam style="display: block;">End Date</spam>
+          <input id="endDate" type="date" class="validate" style="width: auto;">
+        </div>
+        </div>
+
+           <input type="submit" value="Search" name="submit" id="submit" style="width: 10%">      
+
+    </div>
+
+    
+  
+  </form>
+  </div>
+
+  <div id="chart_div" class="draw"></div>
+  <br>
+  <div id="chart_steps" class="draw"></div>
+  <br>
+  <div id="chart_sleep" class="draw"></div>
+
+
+  <!-- ABOUT US MODAL -->
+            <div id="modal-about" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#33B8FF;">About us</h4><br />
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Emergency Care</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Realtime Vital Monitoring</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;">Medications Reminder</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i style="color: black; font-size: small; font-weight: bold;" >Online Help</i></div>
+                            <div class="collapsible-body"><span style="color: #FF0206;">test</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONTACT US MODAL -->
+            <div id="modal-contact" class="modal">
+                <div class="modal-content">
+                    <h4 style="color:#33B8FF;">Contact us</h4><br />
+                    <form id="contact-form">
+
+                        <div class="input-field">
+                            <input type="text" id="contact-name" required />
+                            <label for="contact-name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="contact-email" required />
+                            <label for="contact-email">Email address</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="contact-msg" class="materialize-textarea"></textarea>
+                                <label for="contact-msg">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="btn yellow darken-2 z-depth-0">Send</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+      <!--  Footer Starts here -->
+
+
+      <footer class="page-footer">
+          <div class="container">
+            <div class="footer-copyright">
+            <div class="container">
+            © 2020 WeCare
+            </div>
+          </div>
+        </footer>
+
+      <!-- <footer class="page-footer">
+          <div class="footer-copyright">
+          <div class="container">
+          © 2020 WeCare
+          </div>
+          </div>
+      </footer> -->
+
+
+  <!-- ////////// firebase initialization here ////////////// -->
+
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+      <script>
+          // Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyDf9za7Hfo4oHXLws70A4CI-nFY2bY9638",
+              authDomain: "wecaresystem-34243.firebaseapp.com",
+              databaseURL: "https://wecaresystem-34243.firebaseio.com",
+              projectId: "wecaresystem-34243",
+              storageBucket: "wecaresystem-34243.appspot.com",
+              messagingSenderId: "465247498229",
+              appId: "1:465247498229:web:e7ed7e3698fa132ad6fabc",
+              measurementId: "G-ZPCM6EFEV0"
+              };
+          firebase.initializeApp(config);
+          firebase.analytics();
+          
+          // make auth and firestore references
+          const auth = firebase.auth();
+          const db = firebase.firestore();
+        </script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        	<script src="js/statistics.js"></script>
+  </body>
+  <script src="display.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/contact.js"></script>
+  </html>

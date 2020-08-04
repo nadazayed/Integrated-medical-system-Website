@@ -1,0 +1,607 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getMonth"
+			],
+			[
+				"ge",
+				"getMonth"
+			],
+			[
+				"slee",
+				"sleepArray"
+			],
+			[
+				"step",
+				"stepsArray"
+			],
+			[
+				"drawS",
+				"drawSleep"
+			],
+			[
+				"conver",
+				"convertToDate"
+			],
+			[
+				"HW",
+				"HWMin"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"data",
+				"dataArray"
+			],
+			[
+				"temp",
+				"tempdate"
+			],
+			[
+				"sta",
+				"starts"
+			],
+			[
+				"hr",
+				"HRValue"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"s",
+				"startDate"
+			],
+			[
+				"set",
+				"setDate"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"userpr",
+				"userPropForm"
+			],
+			[
+				"userp",
+				"userPropForm"
+			],
+			[
+				"blood",
+				"bloodArray"
+			],
+			[
+				"bloo",
+				"bloodArray"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"height",
+				"min-height\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"to",
+				"today1"
+			],
+			[
+				"tom",
+				"tomorrow"
+			],
+			[
+				"tmo",
+				"tomorrow"
+			],
+			[
+				"dat",
+				"dateFormat"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"w",
+				"Weight"
+			],
+			[
+				"we",
+				"weight"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"c",
+				"cAge"
+			],
+			[
+				"j",
+				"JavaScript"
+			],
+			[
+				"age",
+				"ageMin"
+			],
+			[
+				"stat",
+				"statistics"
+			],
+			[
+				"pre",
+				"pregnant"
+			],
+			[
+				"titl",
+				"title1"
+			],
+			[
+				"m",
+				"MninmumValue"
+			],
+			[
+				"drw",
+				"drawC"
+			],
+			[
+				"hw",
+				"HWMax"
+			],
+			[
+				"max",
+				"MaximumValue"
+			],
+			[
+				"min",
+				"MninmumValue"
+			],
+			[
+				"agem",
+				"ageMax"
+			],
+			[
+				"ag",
+				"ageMin"
+			],
+			[
+				"userP",
+				"userPropForm"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"filter",
+				"filterArray"
+			],
+			[
+				"non",
+				"notPregnant"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"hei",
+				"heightValue"
+			],
+			[
+				"not",
+				"notSmoker"
+			],
+			[
+				"no",
+				"notSomker"
+			],
+			[
+				"wei",
+				"weight"
+			],
+			[
+				"sm",
+				"somker"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"user",
+				"userPropForm"
+			],
+			[
+				"us",
+				"userPropForm"
+			],
+			[
+				"ce",
+				"checkbox"
+			],
+			[
+				"di",
+				"disabled"
+			],
+			[
+				"border",
+				"border-top\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"add",
+				"add_l"
+			],
+			[
+				"name",
+				"name_l"
+			],
+			[
+				"sing",
+				"singJsonObj"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"p",
+				"_POST"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"my",
+				"mysql_connect"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"fil",
+				"fil_ex"
+			],
+			[
+				"file",
+				"file_temp"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/statistics.html",
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/css/statistics.css",
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/js/profile.js",
+		"/C/Users/Twins/Desktop/design.html",
+		"/C/Users/Twins/Desktop/test.html",
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/js/statistics.js",
+		"/C/Users/Twins/Desktop/test.js",
+		"/C/Users/Twins/Documents/assingment2test.html",
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/index.html",
+		"/C/Program Files/Ampps/www/WeCareWeb/WeCareWeb/public/js/temp.js",
+		"/C/Users/Twins/Desktop/Mohamed Osama/New folder/assigment 2/covidAssignment2.html",
+		"/C/Users/Twins/Dropbox/Spring 2020 BDA/tutorial2.html",
+		"/D/WeCareWeb/WeCareWeb/public/profile.html",
+		"/D/WeCareWeb/WeCareWeb/public/statistics.html",
+		"/D/WeCareWeb/WeCareWeb/public/js/profile.js",
+		"/D/WeCareWeb/WeCareWeb/public/js/statistics.js",
+		"/D/WeCareWeb/WeCareWeb/public/index.html",
+		"/D/WeCareWeb/WeCareWeb/public/sos.html",
+		"/D/WeCareWeb/WeCareWeb/public/community.html",
+		"/C/Program Files/Ampps/www/tes3/test 3/statistics.html",
+		"/C/Users/Twins/Desktop/New folder/script.js",
+		"/C/Users/Twins/Desktop/New folder/index.html",
+		"/C/Program Files/Ampps/www/test 3/statistics.html",
+		"/C/Program Files/Ampps/www/test 3/statistics.js",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/js/profile.js",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/profile.html",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/js/auth.js",
+		"/C/Program Files/Ampps/www/testing/statistics.html",
+		"/C/Program Files/Ampps/www/testing/statistics.css",
+		"/C/Program Files/Ampps/www/testing/display.js",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/js/statistics.js",
+		"/C/Program Files/Ampps/www/testing/statistics.js",
+		"/C/Program Files/Ampps/www/testing/test/statistics.js",
+		"/C/Program Files/Ampps/www/testing/test/public/statistics.html",
+		"/D/SelfTraining/New folder/abc.html",
+		"/D/SelfTraining/New folder/abc.js",
+		"/D/SelfTraining/New folder/abc",
+		"/C/Program Files/Ampps/www/my test/statistics.html",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/js/index.js",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/css/statistics.css",
+		"/C/Program Files/Ampps/www/test/wecare/wecare/client/public/index.html",
+		"/D/wecare/wecare/client/public/profile.html",
+		"/D/wecare/wecare/client/public/index.html",
+		"/C/Program Files/Ampps/www/wecare/wecare/client/public/statistics.html",
+		"/D/wecare/wecare/client/.DS_Store",
+		"/D/wecare/wecare/client/.firebaserc",
+		"/D/wecare/wecare/client/.gitignore",
+		"/D/wecare/wecare/client/package-lock.json",
+		"/D/wecare/wecare/client/firebase.json",
+		"/C/Users/Twins/Desktop/WeCare2.0/WeCare2.0/server/index.php",
+		"/C/Users/Twins/Desktop/Simple_Static_IP_v1.3.0/settings.ini",
+		"/C/Users/Twins/Desktop/weCare/weCare/medical/signup.php",
+		"/C/Users/Twins/Desktop/server/index.php",
+		"/C/Users/Twins/Desktop/WeCare2.0/WeCare2.0/snd.php",
+		"/C/Users/Twins/Desktop/weCare/weCare/server/index.php",
+		"/C/PHP7/php.ini",
+		"/C/wamp64/www/index.php",
+		"/C/Users/Twins/Desktop/server/server/index.php",
+		"/C/Users/Twins/Desktop/Osama/server/index.php",
+		"/C/Users/Twins/Desktop/client/client/index.php",
+		"/C/wamp64/www/testmysql.php",
+		"/C/wamp64/www/test_sockets.php",
+		"/D/AASTMT/projectTest/index.html",
+		"/C/Users/Twins/Desktop/management.html",
+		"/C/Users/Twins/Desktop/tips.html",
+		"/C/Users/Twins/Desktop/lessonstaken.html",
+		"/C/Users/Twins/Desktop/subscription.html",
+		"/C/Users/Twins/Desktop/stories.html",
+		"/C/Users/Twins/Desktop/home.html",
+		"/C/Users/Twins/Desktop/Knowledge Management/Blog.html",
+		"/C/Users/Twins/Desktop/HomePage.html",
+		"/C/Users/Twins/Desktop/Management.html",
+		"/C/Users/Twins/Desktop/about.html",
+		"/C/Users/Twins/Desktop/Blog.html",
+		"/C/Program Files (x86)/Ampps/www/Test/session3.php",
+		"/C/Program Files (x86)/Ampps/www/Test/cockies2.php",
+		"/C/Program Files (x86)/Ampps/www/Test/cockies.php",
+		"/C/Program Files (x86)/Ampps/www/Test/session2.php",
+		"/C/Program Files (x86)/Ampps/www/Test/session.php",
+		"/C/Program Files (x86)/Ampps/www/Test/test.php",
+		"/C/Program Files (x86)/Ampps/www/Test/db.php",
+		"/C/Program Files (x86)/Ampps/www/Test/test2.php",
+		"/C/Program Files (x86)/Ampps/www/Test/reqdb.php",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/boot/css/test2.php",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/boot/css/test.php",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/boot/css/style.css",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/boot/css/bootstrap.css",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/boot/home.html",
+		"/C/Program Files (x86)/Ampps/www/Test/make_order.php",
+		"/C/Program Files (x86)/Ampps/www/Test/customer.php",
+		"/C/Program Files (x86)/Ampps/www/Test/customer.html",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/BootStrap.html",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/BootStrap.js",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/BootStrap.css",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/Jquary.js",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/Jquary2.html",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/Jquary2.css",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/Jquary2.js",
+		"/D/SelfTraining/WebDevelopment/FrontEnd/Jquary2",
+		"/C/Program Files (x86)/Ampps/www/Test/data.txt",
+		"/C/Program Files (x86)/Ampps/www/Test/readFromFIle.php",
+		"/C/Program Files (x86)/Ampps/www/Test/require2.php",
+		"/C/Program Files (x86)/Ampps/www/Test/assign2.php",
+		"/C/Program Files (x86)/Ampps/www/Test/assign2.html",
+		"/C/Program Files (x86)/Ampps/www/Test/assign1.php",
+		"/C/Program Files (x86)/Ampps/www/Test/assign1.html",
+		"/C/Program Files (x86)/Ampps/www/Test/Upload.php",
+		"/C/Program Files (x86)/Ampps/www/Test/Upload.html",
+		"/D/SelfTraining/WebDevelopment/BackEnd/Upload.php",
+		"/D/SelfTraining/WebDevelopment/BackEnd/Upload.html",
+		"/D/SelfTraining"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

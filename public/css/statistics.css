@@ -1,0 +1,135 @@
+body
+{
+	overflow-x: hidden;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bkgnd.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 100%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+input[type=submit]
+{
+	width: 4	0%;
+	box-sizing: border-box;
+	padding:10px 0px;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	background: #FF0206;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 83%;
+}
+
+header
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.wrap
+{
+	height: auto;
+	max-width: 72%;
+	border-radius: 20px;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	padding: 40px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+h2
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.page-footer
+{
+	position: relative;
+	bottom: 0;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+	color: #fff;
+	width: 100%;
+
+	margin-top: 30px;
+}
+
+.page-footer-span
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.highlight
+{
+    border-radius: 20px;
+    color: #fff;
+}
+
+.cross
+{   text-align: center;
+    cursor:  pointer;
+    font-weight:  bold;
+}
+
+.cross:hover
+{
+    border-bottom: 2px solid #FF0206;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  color: white;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  color: white;
+}
+
+input[type=date]{
+  color: white;
+
+} 
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+.gender
+{
+	display: inline;
+	position: relative;
+}
+
+.draw
+{
+ 	height: auto;
+	max-width: 90%
+	border-radius: 20px;
+	margin: auto;
+	background: rgba(0,0,0,0);
+	box-sizing: border-box;
+	padding: 40px;
+	margin-top: 20px;
+}
